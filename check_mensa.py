@@ -1,9 +1,8 @@
 import requests
-import os
 
-WEBHOOK = os.environ.get("WEBHOOK_URL")
+WEBHOOK = "ここにDiscordのWebhook URLをそのまま貼る"
 
 requests.post(
     WEBHOOK,
-    json={"content": "🔥 テスト通知（必ず来るはず）"}
+    json={"content": "テスト通知"}
 )
